@@ -1,0 +1,321 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Full-Screen Landing Page */
+#landingPage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-image:url('https://media.istockphoto.com/id/1362365251/photo/abstract-technology-wave-of-particles-big-data-visualization-background-with-motion-dots-and.jpg?b=1&s=612x612&w=0&k=20&c=Q0dsczgRxL-gtaNv5bCySzbVqqszStOS3lt0wPDNjng=');
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #00d2ff;
+}
+
+.landingContent {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+.landingContent h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.landingContent p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.ctaBtn {
+    background-color: #00d2ff;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ctaBtn:hover {
+    background-color: #3a7bd5;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Game Section */
+.gameSection {
+    display: flex;
+    padding: 30px;
+    background: #f4f4f4;
+    transition: transform 1s ease-in-out;
+}
+
+#gameContainer {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#leaderboardSection {
+    flex: 1;
+    margin-left: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3a7bd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00d2ff;
+}
+
+#timeDisplay {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Leaderboard Styling */
+#leaderboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#leaderboardTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* About Section */
+#aboutSection {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    color: yellow;
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+}
+
+#footer {
+    background-color: #3a7bd5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+    width: 100%;
+    bottom: 0;
+}
+
+/* Profile Section Styles */
+#profileSection {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+}
+
+#profileBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#profileImageContainer {
+    flex: 0 0 120px;
+    margin-right: 30px;
+}
+
+#profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3a7bd5;
+}
+
+#profileInfo {
+    flex: 1;
+    text-align: left;
+}
+
+#profileInfo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#profileInfo table td {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#profileInfo table td:first-child {
+    font-weight: bold;
+}
+
+#profileInfo table td:nth-child(2) {
+    color: #3a7bd5;
+}
+
+/* Small adjustments */
+#profileSection h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+#welcomeLogo {
+    width: 900px; /* Adjust the size of the logo */
+    height: auto;
+    margin-left: 10px; /* Space between 'Welcome to' and logo */
+    vertical-align: middle; /* Align logo vertically with the text */
+}
+
+#websiteName {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#logo {
+    width: 249px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+/* About Section */
+#aboutSection {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+}
+
+/* Contact Us Section */
+#contactSection {
+    background-color: #20232a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+}
+
+#contactSection h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3a7bd5; /* Futuristic blue */
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputField {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputField label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.inputField input, .inputField textarea {
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+.inputField input:focus, .inputField textarea:focus {
+    outline: none;
+    border-color: #3a7bd5; /* Highlight on focus */
+}
+
+
+
+button:hover {
+    background-color: #2c5e8f; /* Darker blue on hover */
+}
+
+.playSection {
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+}

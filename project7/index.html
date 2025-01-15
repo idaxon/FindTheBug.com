@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Code Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-Screen Landing Page -->
+    <section id="landingPage" class="fullscreen">
+        <nav id="navbar">
+            <div id="websiteName">
+                <img src="logo.png" alt="Code Challenge Logo" id="logo"> 
+            </div>
+            
+            <ul>
+                <a href="#playSection">Play</a>
+                <a href="#leaderboardSection">Leaderboard</a>
+                <a href="#aboutSection">About</a>
+                <a href="#profileSection">Profile</a>
+            </ul>
+            
+        </nav>
+        <div class="landingContent">
+            <h1>Welcome to the <img src="logo.png" alt="Code Challenge Logo" id="welcomeLogo"> Futuristic Bug Finding Challenge!</h1>
+
+            <p>Find and fix bugs, solve code challenges, and climb the leaderboard!</p>
+            <button id="startPlayingBtn" class="ctaBtn">Start Playing</button>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+     <div class="iou">
+    <section id="playSection" class="gameSection">
+        <div id="gameContainer">
+            <div id="challengeArea">
+                <!-- Code challenge will be displayed here -->
+            </div>
+            <textarea id="solutionInput" placeholder="Type your solution here..."></textarea>
+            <div id="timeDisplay">00:00</div>
+            <button id="submitSolutionBtn">Submit Solution</button>
+            <button id="showSolutionBtn">Show Solution</button>
+            <button id="quitGameBtn">Quit Game</button>
+        </div>
+        <div id="leaderboardSection">
+            <h2>Leaderboard</h2>
+            <table id="leaderboardTable">
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Bugs Solved</th>
+                    <th>Points</th>
+                    <th>Time Spent</th>
+                </tr>
+                <!-- Leaderboard will be dynamically populated here -->
+            </table>
+        </div>
+    </section>
+    <!-- Profile Section -->
+<section id="profileSection">
+    <h2>Your Profile</h2>
+    <div id="profileBox">
+        <div id="profileImageContainer">
+            <img src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg" alt="Profile Picture" id="profileImage">
+        </div>
+        <div id="profileInfo">
+            <table>
+                <tr>
+                    <td><strong>Username:</strong></td>
+                    <td id="profileUsername">User1</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Bugs Solved:</strong></td>
+                    <td id="profileBugsSolved">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Points:</strong></td>
+                    <td id="profilePoints">150</td>
+                </tr>
+                <tr>
+                    <td><strong>Rank:</strong></td>
+                    <td id="profileRank">#1024</td>
+                </tr>
+                <tr>
+                    <td><strong>Badges:</strong></td>
+                    <td id="badgeList">Fast Solver, Fast Learner</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+   <!-- About Section -->
+<section id="aboutSection">
+    <h2>About Code Challenge</h2>
+    <p>This is an interactive coding platform where users solve coding challenges, find bugs in code, and compete with others. The more challenges you solve, the higher your rank on the leaderboard. Try your best to fix the bugs quickly!</p>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contactSection">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="inputField">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="inputField">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="inputField">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="3" required></textarea>
+        </div>
+        <button type="submit">Send It!</button>
+    </form>
+</section>
+
+
+   
+    <footer id="footer">
+        <p>&copy; 2025 Code Challenge. All rights reserved.</p>
+    </footer>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
